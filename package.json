@@ -1,0 +1,17 @@
+{
+  "name": "rex-kitchen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss build ./src/style.css -o ./public/style.css -w"
+  },
+  "author": "Habeeb",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "dependencies": {
+    "git": "^0.1.5"
+  }
+}
