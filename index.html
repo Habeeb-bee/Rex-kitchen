@@ -29,7 +29,7 @@
                 </h1>
             </div>
 
-           <div class=" nav-links z-10 right-[-100%] top-[10%] duration-500 bg-red-600 absolute min-h-[60vh] right-0 w-full flex items-center px-5 md:bg-transparent md:static md:min-h-fit md:w-auto">
+           <div class=" nav-links opacity-0 z-10 right-[-100%] top-[10%] duration-500 bg-red-600 absolute min-h-[60vh] right-0 w-full flex items-center px-5 md:bg-transparent md:static md:min-h-fit md:w-auto">
             <ul class="nav-nav flex md:flex-row flex-col md:item-center md:gap-4 gap-8">
                 <li>
                     <a class="hover:text-red-600" href=""><span>Home</span></a>
@@ -75,7 +75,8 @@
     const navLinks = document.querySelector('.nav-links');
   function onToggleMenu(e) {
      e.name = e.name=== 'menu'? 'close' : 'menu' ;
-     navLinks.classList.toggle('right-[0%]')  
+     navLinks.classList.toggle('right-[0%]') 
+     navLinks.classList.toggle('opacity-100') 
   }
 </script>
 </html>
