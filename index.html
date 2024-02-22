@@ -19,18 +19,21 @@
 <body class="">
   
         <!--header-->
-      <div class=" h-1/2 w-screen text-center bg-no-repeat bg-cover bg-top "  style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./public/img/kitchen-bg.jpg');"> 
+      <div class=" h-1/2 w-screen text-center bg-no-repeat bg-cover bg-top md:h-3/4 "  style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./public/img/kitchen-bg.jpg');"> 
         
         
-        
-        <nav class="text-white flex justify-between items-center w-[92%] py-5 mx-auto">
-            <div class="nav-logo">
-                <h1><a > <span class="rex text-red-600 font-[Dancing Script]">Rex </span>kitchen</a>
+        <!--navigation-->
+        <nav class="text-white sticky top-0 bg-black/[.7] flex justify-between  items-center w-[100%] py-5 px-4 md:px-[4em]">
+            <div class="nav-logo text-2xl">
+                <h1><a > <span class="rex  text-red-600 font-[Dancing Script]">Rex </span>kitchen</a>
                 </h1>
             </div>
 
-           <div class=" nav-links overflow-hidden opacity-0 z-10 right-[-100%] top-[10%] duration-500 bg-red-600 absolute min-h-[60vh] right-0 w-full flex items-center px-5 md:bg-transparent md:static md:min-h-fit md:w-auto">
-            <ul class="nav-nav flex md:flex-row flex-col md:item-center md:gap-4 gap-8">
+           <div class=" nav-links   opacity-0 z-10 left-[27%] top-[-90%] duration-500 bg-red-600/[.95] absolute min-h-[65vh]  w-[70vw] flex pt-[10em] place-content-center
+            md:bg-transparent md:opacity-100 md:static md:pt-0 md:min-h-fit md:mx-auto">
+
+
+            <ul class="nav-nav text-xl  gap-6 text-center flex-col flex md:flex-row  md:item-center md:gap-[4vw] ">
                 <li>
                     <a class="hover:text-red-600" href=""><span>Home</span></a>
                 </li>
@@ -41,41 +44,57 @@
                 <li>
                     <a class="hover:text-red-600"  href=""><span>Contact</span></a>
                 </li>
-            </ul> </div>
-     <div class="flex item-center gap-6">
-            <ion-icon onclick="onToggleMenu(this)"  class="icon text-4xl cursor-pointer md:hidden"  name="menu"></ion-icon>
+            </ul>                 
+           </div>
+
+
+     <div class="flex item-center gap-4">
+        <button class="sign-btn text-white border-white border-2 px-4 py-2 rounded-full  hover:bg-red-600">Sign In</button>
+
+            <ion-icon onclick="onToggleMenu(this)"  class="icon text-4xl z-10 pt-1 md:hidden"  name="menu"></ion-icon>
         </div>
         </nav>
-          <div class="disc text-center mt-10">
-        <h2 class="text-red-600 text-lg  ">Welcome To</h2> <br>
+<!--navigation-end-->
 
-        <h1 class=" tracking-wider text-white text-4xl font-bold -mt-5 pb-5" >Rex kitchen</h1>
+
+<!--home-hero-->
+          <div class="disc text-center mt-[5em] ">
+        <h2 class="text-red-600 text-2xl md:text-4xl ">Welcome To</h2> <br>
+
+        <h1 class=" tracking-wider text-white text-5xl font-bold -mt-5 pb-5 md:text-6xl" >Rex kitchen</h1>
        
-        <div class="btns mt-1">
-             <button class=" btn-white text-red-600 bg-white mr-4 px-4 py-2 rounded-full hover:bg-white hover:text-red-600">
-            <span class=" pr-0.5 text-lg"><ion-icon name="logo-google-playstore" ></ion-icon></span> <span class="pb-1 text-lg">Download</span></button>
-
-
-       <button class="btn-red text-white bg-red-600 px-4 py-2 rounded-full hover:bg-white hover:text-red-600">
-            <span class=" pr-0.5 text-lg"><ion-icon name="logo-apple"></ion-icon></span> <span class="pb-1 text-lg">Download</span></button></div>
-       
+       <button class="Book-btn border-white border-2 px-4 py-3 text-white mt-1 md:px-6 md:py-3 md:text-xl hover:bg-red-600 "> Book A Table</button>
  
     </div>
 
       </div>
-       <!--end nav-->
+       
 
 
-      <main>
-    
+      <main class="pb-5 bg-gray-200 text-center">
+    <div class="reservation text-white
+    bg-red-600 py-5
+    text-3xl"><h1>RESERVATION</h1></div>
+    <div class="date py-3 ">Date:</div>
+    <div class="time py-3 ">Time:</div>
+    <div class="table-for py-3 ">Table:</div>
+    <button class="btn-book text-white bg-red-600 px-4 py-2 rounded-full hover:bg-red-700"> Book</button>
       </main>
+
+      <div class="about text-center text-white  py-5 "  style="background-color:#192024;">
+        <span class="about-span text-3xl ">About</span> <br>
+        <p class="py-5 text-xl"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aperiam, explicabo doloribus sed </p> 
+      </div>
+      
+
+
 </body>
 
 <script>
     const navLinks = document.querySelector('.nav-links');
   function onToggleMenu(e) {
      e.name = e.name=== 'menu'? 'close' : 'menu' ;
-     navLinks.classList.toggle('right-[0%]') 
+     navLinks.classList.toggle('top-[8%]') 
      navLinks.classList.toggle('opacity-100') 
   }
 </script>
