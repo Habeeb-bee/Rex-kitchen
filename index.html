@@ -33,7 +33,7 @@
             lg:bg-transparent lg:opacity-100 lg:static lg:pt-0 lg:min-h-fit lg:mx-auto">
 
 
-            <ul class="nav-nav text-xl  gap-6 text-center flex-col flex lg:flex-row  lg:item-center lg:gap-[4vw] ">
+            <ul class="nav-nav text-xl  gap-6 text-center flex flex-col  lg:flex-row  lg:item-center lg:gap-[4vw] ">
                 <li>
                     <a class="hover:text-red-600" href=""><span>Home</span></a>
                 </li>
@@ -103,10 +103,23 @@
          <h2 class="text-3xl font-bold">-<span class="about-span  text-red-600  ">Rex</span> kitchen </h2>  
       </div>
 
-     
+       <!--sponsors-->
+
+<div class="sponsors py-[3em] bg-gray-200 px-4 flex flex-row justify-between gap-[4vw]">
+    <img class="size-20  px-2 bg-black" src="./public/img/diamond.png" alt="">
+    <img  class="size-20 px-2 "src="./public/img/bizinsider.png" alt="">
+    <img  class="size-20  px-2 "src="./public/img/logo.png" alt="">
+    <img class="size-20 px-2 " src="./public/img/mean.jpg" alt="">
+
+</div>
+
+
+
+
+
       <!--whyUs-->
 
-      <div class="why py-8 bg-gray-200 text-center lg:py-[5em] ">
+      <div class="why py-8 bg-gray-100 text-center lg:py-[5em] ">
         <h1 class="text-4xl py-3 block font-bold lg:text-5xl"> <span class="text-red-600"> Why</span> Us</h1>
         <div class="reason lg:flex lg:flex-row lg:gap-[4vw] ">
 
@@ -137,9 +150,34 @@
 
       <!--testimony-->
 
-      <div class="testimonials py-[5em] text-center">
-        <h1>Testimonials</h1>
-      </div>
+      <section class="testimonials py-[2em] px-1" id="section--3">
+
+          <h1 class="testimonial-title text-center text-4xl font-bold text-red-600 py-5">Testimonials</h1>
+
+        <div class="slider h-[40vh] my-0 mx-auto relative">
+          <div class="slide absolute top-0 w-[100%] h-[20rem] flex items-center	justify-center duration-100">
+            <div class="testimonial-slider">
+              <h2 class="testimonial-disc text-xl py-4">Best dishes on the planet</h2>
+              <blockquote class="testimonial__text px-[3em]">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium quas quisquam non? Quas voluptate nulla minima
+                deleniti optio ullam nesciunt, 
+              </blockquote>
+
+              <address class="testimonial-author px-[1em] pt-[1em] pb-[4em]">
+                <h6 class="testimonial-name ">Ameen</h6>
+                <p class="testimonial-location ">San Francisco, USA</p>
+              </address>
+            </div>
+          </div>
+  
+          <button class="slider-btn btn-left absolute top-[45%] z-10 text-red-600 text-4xl cursor-pointer left-0 translate-y-1/2 	 ">&larr;</button>
+          <button class="slider-btn btn-right absolute top-[45%] z-10 text-red-600 text-4xl cursor-pointer right-0  translate-y-1/2 ">&rarr;</button>
+          <div class="dots flex absolute left-[50%] bottom-[1%] translate-y-1/2 ">.</div>
+
+        </div>
+      </section>
+  
       
 
 

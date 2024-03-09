@@ -833,6 +833,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-\[4vw\] {
+  gap: 4vw;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
