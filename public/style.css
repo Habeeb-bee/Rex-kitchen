@@ -790,6 +790,10 @@ video {
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -919,8 +923,20 @@ video {
   padding-top: 1em;
 }
 
+.pl-\[2em\] {
+  padding-left: 2em;
+}
+
+.pl-\[1em\] {
+  padding-left: 1em;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-start {
+  text-align: start;
 }
 
 .text-2xl {
