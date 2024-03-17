@@ -16,7 +16,7 @@
 </head>
 
 
-<body class="overflow-hidden">
+<body class="">
   
         <!--header-->
       <div class="  text-center bg-no-repeat bg-cover bg-top md:h-3/4 "  style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./public/img/kitchen-bg.jpg');"> 
@@ -140,14 +140,31 @@
       
        <!--sponsors-->
 
- <div class="sponsors py-[1.5em] bg-gray-200 px-4 flex flex-row justify-between gap-[4vw] " style=" background-color: #192024 ;"  >
+       <div class="slider bg-[#192024] h-[10em] m-auto relative w-[10em] flex items-center ">
+        <div class="slide-track flex w-[calc(10em * 8)] animate-scroll ">
+          <img class=" flex items-center p-[8px] w-[100%] h-[18vw]  " src="./public/img/diamond.png" alt="">
+          <img class=" flex items-center p-[8px] w-[100%] h-[18vw] " src="./public/img/spice.png" alt="">
+          <img  class="flex items-center p-[8px] w-[100%] h-[18vw] " src="./public/img/logo.png" alt="">
+          <img class="flex items-center p-[8px] w-[100%] h-[18vw] " src="./public/img/mean.jpg" alt="">
+
+          <img class=" flex items-center p-[8px] w-[100%] h-[18vw]  " src="./public/img/diamond.png" alt="">
+          <img class=" flex items-center p-[8px] w-[100%] h-[18vw] " src="./public/img/spice.png" alt="">
+          <img  class="flex items-center p-[8px] w-[100%] h-[18vw] " src="./public/img/logo.png" alt="">
+          <img class="flex items-center p-[8px] w-[100%] h-[18vw] " src="./public/img/mean.jpg" alt="">
+        </div>
+       </div>
+
+ <!-- <div class="sponsors py-[1.5em]  px-4 bg-[#192024] flex flex-row justify-between gap-[4vw] animate-scroll " >
      <img class=" flex-auto w-[25vw] h-[18vw]  " src="./public/img/diamond.png" alt="">
     <img class=" flex-auto w-[25vw] h-[18vw] " src="./public/img/spice.png" alt="">
     <img  class="flex-auto w-[25vw] h-[18vw] " src="./public/img/logo.png" alt="">
     <img class="flex-auto w-[25vw] h-[18vw] " src="./public/img/mean.jpg" alt="">
+    <img class=" flex-auto w-[25vw] h-[18vw]  " src="./public/img/diamond.png" alt="">
+    <img class=" flex-auto w-[25vw] h-[18vw] " src="./public/img/spice.png" alt="">
+    <img  class="flex-auto w-[25vw] h-[18vw] " src="./public/img/logo.png" alt="">
+    <img class="flex-auto w-[25vw] h-[18vw] " src="./public/img/mean.jpg" alt="">
 
-
-</div> 
+</div>  -->
 
       <!--menu-->
 
@@ -214,8 +231,8 @@
 
         <h1 class="testimonial-title text-center text-4xl font-bold text-red-600 py-5">Testimonials</h1>
 
-      <div class="slider h-[40vh] my-0 mx-auto relative">
-        <div class="slide absolute top-0 w-[100%] h-[20rem] flex items-center	justify-center duration-100">
+      <div class="slider overflow-hidden h-[40vh] my-0 mx-auto relative  ">
+        <div class="slide absolute top-0 w-[100%] h-[20rem] flex items-center	justify-center ease-in duration-500">
           <div class="testimonial-slider">
             <h2 class="testimonial-disc text-xl py-4">Best dishes on the planet</h2>
             <blockquote class="testimonial__text px-[3em]">
@@ -231,9 +248,41 @@
           </div>
         </div>
 
+        <div class="slide absolute top-0 w-[100%] h-[20rem] flex items-center	justify-center ease-in duration-500">
+          <div class="testimonial-slider">
+            <h2 class="testimonial-disc text-xl py-4">Best dishes on the planet</h2>
+            <blockquote class="testimonial__text px-[3em]">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusantium quas quisquam non? Quas voluptate nulla minima
+              deleniti optio ullam nesciunt, 
+            </blockquote>
+
+            <address class="testimonial-author px-[1em] pt-[1em] pb-[4em]">
+              <h6 class="testimonial-name ">Abu Habeef</h6>
+              <p class="testimonial-location ">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide absolute top-0 w-[100%] h-[20rem] flex items-center	justify-center ease-in duration-500">
+          <div class="testimonial-slider">
+            <h2 class="testimonial-disc text-xl py-4">Best dishes on the planet</h2>
+            <blockquote class="testimonial__text px-[3em]">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusantium quas quisquam non? Quas voluptate nulla minima
+              deleniti optio ullam nesciunt, 
+            </blockquote>
+
+            <address class="testimonial-author px-[1em] pt-[1em] pb-[4em]">
+              <h6 class="testimonial-name ">Ibraheem</h6>
+              <p class="testimonial-location ">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
+
         <button class="slider-btn btn-left absolute top-[45%] z-10 text-red-600 text-4xl cursor-pointer left-0 translate-y-1/2 	 ">&larr;</button>
         <button class="slider-btn btn-right absolute top-[45%] z-10 text-red-600 text-4xl cursor-pointer right-0  translate-y-1/2 ">&rarr;</button>
-        <div class="dots flex absolute left-[50%] bottom-[1%] translate-y-1/2 ">.</div>
+        <div class="dots flex absolute left-[50%] bottom-[10%] translate-y-1/2 bg-red-600 h-[1rem] w-[1rem]  rounded-full cursor-pointer	  "></div>
 
       </div>
     </section>
@@ -308,4 +357,6 @@
      navLinks.classList.toggle('opacity-100') 
   }
 </script>
+
+<script src="index.js"></script>
 </html>
