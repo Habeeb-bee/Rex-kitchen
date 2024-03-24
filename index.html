@@ -141,12 +141,7 @@
        <!--sponsors-->
 
        <div class="slider bg-[#192024] h-[10em] m-auto relative w-[10em] flex items-center ">
-        <div class="slide-track flex w-[calc(10em * 8)] animate-scroll ">
-          <img class=" flex items-center p-[8px] w-[100%] h-[18vw]  " src="./public/img/diamond.png" alt="">
-          <img class=" flex items-center p-[8px] w-[100%] h-[18vw] " src="./public/img/spice.png" alt="">
-          <img  class="flex items-center p-[8px] w-[100%] h-[18vw] " src="./public/img/logo.png" alt="">
-          <img class="flex items-center p-[8px] w-[100%] h-[18vw] " src="./public/img/mean.jpg" alt="">
-
+        <div class="slide-track flex w-[calc(10em * 8)] animate-scroll overflow-hidden">
           <img class=" flex items-center p-[8px] w-[100%] h-[18vw]  " src="./public/img/diamond.png" alt="">
           <img class=" flex items-center p-[8px] w-[100%] h-[18vw] " src="./public/img/spice.png" alt="">
           <img  class="flex items-center p-[8px] w-[100%] h-[18vw] " src="./public/img/logo.png" alt="">
@@ -176,47 +171,61 @@
 
           <div class="cards p-[3em]  flex flex-wrap justify-between gap-[3.5em]">
 
-            <div class="card1 flex-auto bg-slate-100 rounded-lg ">
-              <img class="h-[13em] w-full object-cover"  src="
+            <div class="card1 flex-auto bg-slate-100 rounded-lg relative  ">
+              <img class="min-h-[13em] max-h-[13.5em] w-full object-cover"  src="
               ./public/img/jollof.jpg" alt="">
 
               <div class="disc  px-[.5em] py-[1em]  ">
                 <h1 class=" text-2xl font-bold">jollof Rice</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, earum!</p>
+                <p class="price pt-[.5em] text-red-600">$15</p>
               </div>
               
+              <div class="badge bg-red-500  rounded-r-full p-[.5em] absolute top-[40%] "><span><span class="font-bold">⭐4.75</span> (15)</span></div>
             </div>
 
-            <div class="card1 flex-auto bg-slate-100 rounded-lg">
-              <img class="max-h-[13em] w-full object-cover"  src="
+            <div class="card2 flex-auto bg-slate-100 rounded-lg   relative">
+              <img class="mim-h-[13em] w-full object-cover"  src="
               ./public/img/iyan.jpg" alt="">
 
               <div class="disc px-[.5em] py-[1em] ">
                 <h1 class=" text-2xl font-bold">Pounded Yam</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, earum!</p>
+                <p class="price pt-[.5em] text-red-600">$15</p>
               </div>
+
+              <div class="badge bg-red-500  rounded-r-full p-[.5em] absolute top-[40%] "><span><span class="font-bold">⭐5</span> (10)</span></div>
+
               
             </div>
 
-            <div class="card1 flex-auto bg-slate-100 rounded-lg">
-              <img class="max-h-[13em] w-full object-cover"  src="
-              ./public/img/iyan.jpg" alt="">
+            <div class="card3 flex-auto bg-slate-100 rounded-lg   relative">
+              <img class="min-h-[13em] max-h-[13.5em]  w-full object-cover"  src="
+              ./public/img/ramen.jpg" alt="">
 
               <div class="disc px-[.5em] py-[1em] ">
-                <h1 class=" text-2xl font-bold">Pounded Yam</h1>
+                <h1 class=" text-2xl font-bold">Ramen</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, earum!</p>
+                <p class="price pt-[.5em] text-red-600">$15</p>
               </div>
+
+              <div class="badge bg-red-500  rounded-r-full p-[.5em] absolute top-[40%] "><span><span class="font-bold">⭐4.5</span> (22)</span></div>
+
               
             </div>
 
-            <div class="card1 flex-auto bg-slate-100 rounded-lg">
-              <img  class="h-[13em] w-full object-cover" src="
-              ./public/img/kitchen-bg.jpg" alt="">
+            <div class="card4 flex-auto bg-slate-100 rounded-lg   relative">
+              <img  class="min-h-[13em] max-h-[13.5em]  w-full object-cover" src="
+              ./public/img/chicken.jpg" alt="">
 
               <div class="disc px-[.5em] py-[1em] ">
-                   <h1 class=" text-2xl font-bold"> </h1>
+                   <h1 class=" text-2xl font-bold">Chicken Masala </h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, earum!</p>
+                <p class="price pt-[.5em] text-red-600">$15</p>
               </div>
+
+               <div class="badge bg-red-500  rounded-r-full p-[.5em] absolute top-[40%] "><span><span class="font-bold">⭐4.4</span> (25)</span></div>
+
               
             </div>
           </div>
@@ -293,12 +302,18 @@
 
     <section class="footer text-white bg-[#192024] pt-[1em] pb-[3em] ">
       <div class="footer-content flex py-[2em] px-[1em] flex-wrap  gap-4 md:flex-row md:justify-between  ">
+
+
           <div class="logo md:basis-1/4 ">    
         <h2 class=" text-3xl font-bold">-<span class="about-span  text-red-600  ">Rex</span> kitchen </h2>
         <p class="disc pl-[1em] pt-[.5em]"> anytime, anywhere. enjoy your meal</p> 
-        <div class="socials pl-[1em] pt-[.5em] "><span class="inline-block"> <img width="50" height="50" src="https://img.icons8.com/3d-fluency/94/instagram-new.png" alt="instagram-new"/></span>
-           <span class=""><img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/twitterx--v2.png" alt="twitterx--v2"/></span>
-            <span><img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/></span>
+
+
+        <!--socials-->
+        <div class="socials pl-[1em] pt-[.5em] flex flex-row  ">
+         <a class="cursor-pointer " style="padding-right: .5em;" href=""><img width="30" height="30" src="https://img.icons8.com/3d-fluency/94/instagram-new.png" alt="instagram-new"/></a>
+         <a class="cursor-pointer" style="padding-right: .5em;" href="https://twitter.com/ha90094"><img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/twitterx--v2.png" alt="twitterx--v2"/></a>
+          <a class="cursor-pointer" href=""><img width="30" height="30" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/></span></a>
           </div> 
         
      
