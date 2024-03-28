@@ -139,27 +139,24 @@
      
       
        <!--sponsors-->
+       <div class="flex bg-[#192024]  overflow-hidden space-x-16 group ">
+       <div class="slider flex justify-between  animate-loop-scroll space-x-16 group-hover:paused px-[4em]">
+          <img class="  aspect-[1.11] object-contain object-center  overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full   " src="./public/img/diamond.png" alt="">
+          <img class=" aspect-[1.11] object-contain object-center  overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/spice.png" alt="">
+          <img  class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/logo.png" alt="">
+          <img class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/mean.jpg" alt="">
 
-       <div class="slider bg-[#192024] h-[10em] m-auto relative w-[10em] flex items-center ">
-        <div class="slide-track flex w-[calc(10em * 8)] animate-scroll overflow-hidden">
-          <img class=" flex items-center p-[8px] w-[100%] h-[18vw]  " src="./public/img/diamond.png" alt="">
-          <img class=" flex items-center p-[8px] w-[100%] h-[18vw] " src="./public/img/spice.png" alt="">
-          <img  class="flex items-center p-[8px] w-[100%] h-[18vw] " src="./public/img/logo.png" alt="">
-          <img class="flex items-center p-[8px] w-[100%] h-[18vw] " src="./public/img/mean.jpg" alt="">
-        </div>
+          <img class="  aspect-[1.11] object-contain object-center  overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full   " src="./public/img/diamond.png" alt="">
+          <img class=" aspect-[1.11] object-contain object-center  overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/spice.png" alt="">
+          <img  class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/logo.png" alt="">
+          <img class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/mean.jpg" alt="">
+    
        </div>
+   
+    </div>
 
- <!-- <div class="sponsors py-[1.5em]  px-4 bg-[#192024] flex flex-row justify-between gap-[4vw] animate-scroll " >
-     <img class=" flex-auto w-[25vw] h-[18vw]  " src="./public/img/diamond.png" alt="">
-    <img class=" flex-auto w-[25vw] h-[18vw] " src="./public/img/spice.png" alt="">
-    <img  class="flex-auto w-[25vw] h-[18vw] " src="./public/img/logo.png" alt="">
-    <img class="flex-auto w-[25vw] h-[18vw] " src="./public/img/mean.jpg" alt="">
-    <img class=" flex-auto w-[25vw] h-[18vw]  " src="./public/img/diamond.png" alt="">
-    <img class=" flex-auto w-[25vw] h-[18vw] " src="./public/img/spice.png" alt="">
-    <img  class="flex-auto w-[25vw] h-[18vw] " src="./public/img/logo.png" alt="">
-    <img class="flex-auto w-[25vw] h-[18vw] " src="./public/img/mean.jpg" alt="">
 
-</div>  -->
+
 
       <!--menu-->
 
@@ -171,8 +168,10 @@
 
           <div class="cards p-[3em]  flex flex-wrap justify-between gap-[3.5em]">
 
-            <div class="card1 flex-auto bg-slate-100 rounded-lg relative  ">
-              <img class="min-h-[13em] max-h-[13.5em] w-full object-cover"  src="
+            
+            <div class="group card1 flex-auto bg-slate-100 rounded-lg relative overflow-hidden ">
+              <img class="min-h-[13em] max-h-[13.5em] w-full object-cover 
+              "  src="
               ./public/img/jollof.jpg" alt="">
 
               <div class="disc  px-[.5em] py-[1em]  ">
@@ -182,52 +181,85 @@
               </div>
               
               <div class="badge bg-red-500  rounded-r-full p-[.5em] absolute top-[40%] "><span><span class="font-bold">⭐4.75</span> (15)</span></div>
+
+              <div class="order bg-black text-center duration-1000  opacity-90 bg-cover absolute w-full h-full group-hover:translate-y-[-100%]  ">
+                <button class="border-red-600 border-2 mt-[50%] px-4 py-3 text-red-600 
+                 md:px-6 md:py-3 md:text-xl hover:bg-red-600 hover:border-white hover:text-white ">
+                  ORDER </button>
+              </div>
             </div>
 
-            <div class="card2 flex-auto bg-slate-100 rounded-lg   relative">
-              <img class="mim-h-[13em] w-full object-cover"  src="
-              ./public/img/iyan.jpg" alt="">
 
-              <div class="disc px-[.5em] py-[1em] ">
+            <div class="group card2 flex-auto bg-slate-100 rounded-lg relative overflow-hidden ">
+              <img class="min-h-[13em] max-h-[13.5em] w-full object-cover 
+              "  src="
+              ./public/img/photo.jpg" alt="">
+
+              <div class="disc  px-[.5em] py-[1em]  ">
                 <h1 class=" text-2xl font-bold">Pounded Yam</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, earum!</p>
                 <p class="price pt-[.5em] text-red-600">$15</p>
               </div>
-
-              <div class="badge bg-red-500  rounded-r-full p-[.5em] absolute top-[40%] "><span><span class="font-bold">⭐5</span> (10)</span></div>
-
               
+              <div class="badge bg-red-500  rounded-r-full p-[.5em] absolute top-[40%] "><span><span class="font-bold">⭐4.75</span> (15)</span></div>
+
+              <div class="order bg-black text-center duration-1000  opacity-90 bg-cover absolute w-full h-full group-hover:translate-y-[-100%]  ">
+                <button class="border-red-600 border-2 mt-[50%] px-4 py-3 text-red-600 
+                 md:px-6 md:py-3 md:text-xl hover:bg-red-600 hover:border-white hover:text-white ">
+                  ORDER </button>
+              </div>
             </div>
 
-            <div class="card3 flex-auto bg-slate-100 rounded-lg   relative">
-              <img class="min-h-[13em] max-h-[13.5em]  w-full object-cover"  src="
+            
+            <div class="group card3 flex-auto bg-slate-100 rounded-lg relative overflow-hidden ">
+              <img class="min-h-[13em] max-h-[13.5em] w-full object-cover 
+              "  src="
               ./public/img/ramen.jpg" alt="">
 
-              <div class="disc px-[.5em] py-[1em] ">
+              <div class="disc  px-[.5em] py-[1em]  ">
                 <h1 class=" text-2xl font-bold">Ramen</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, earum!</p>
                 <p class="price pt-[.5em] text-red-600">$15</p>
               </div>
-
-              <div class="badge bg-red-500  rounded-r-full p-[.5em] absolute top-[40%] "><span><span class="font-bold">⭐4.5</span> (22)</span></div>
-
               
+              <div class="badge bg-red-500  rounded-r-full p-[.5em] absolute top-[40%] "><span><span class="font-bold">⭐4.75</span> (15)</span></div>
+
+              <div class="order bg-black text-center duration-1000  opacity-90 bg-cover absolute w-full h-full group-hover:translate-y-[-100%]  ">
+                <button class="border-red-600 border-2 mt-[50%] px-4 py-3 text-red-600 
+                 md:px-6 md:py-3 md:text-xl hover:bg-red-600 hover:border-white hover:text-white ">
+                  ORDER </button>
+              </div>
             </div>
 
-            <div class="card4 flex-auto bg-slate-100 rounded-lg   relative">
-              <img  class="min-h-[13em] max-h-[13.5em]  w-full object-cover" src="
+
+            
+            <div class="group card4 flex-auto bg-slate-100 rounded-lg relative overflow-hidden ">
+              <img class="min-h-[13em] max-h-[13.5em] w-full object-cover 
+              "  src="
               ./public/img/chicken.jpg" alt="">
 
-              <div class="disc px-[.5em] py-[1em] ">
-                   <h1 class=" text-2xl font-bold">Chicken Masala </h1>
+              <div class="disc  px-[.5em] py-[1em]  ">
+                <h1 class=" text-2xl font-bold">Chicken Masala</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, earum!</p>
                 <p class="price pt-[.5em] text-red-600">$15</p>
               </div>
-
-               <div class="badge bg-red-500  rounded-r-full p-[.5em] absolute top-[40%] "><span><span class="font-bold">⭐4.4</span> (25)</span></div>
-
               
+              <div class="badge bg-red-500  rounded-r-full p-[.5em] absolute top-[40%] "><span><span class="font-bold">⭐4.75</span> (15)</span></div>
+
+              <div class="order bg-black text-center duration-1000  opacity-90 bg-cover absolute w-full h-full group-hover:translate-y-[-100%]  ">
+                <button class="border-red-600 border-2 mt-[50%] px-4 py-3 text-red-600 
+                 md:px-6 md:py-3 md:text-xl hover:bg-red-600 hover:border-white hover:text-white ">
+                  ORDER </button>
+              </div>
             </div>
+
+
+
+            
+
+
+            
+            
           </div>
 
 

@@ -1,3 +1,38 @@
+// const card1 = document.querySelector('.card1');
+// const card2 = document.querySelector('.card2');
+// const orderNow = document.querySelector('.order');
+
+
+
+
+
+// card1.addEventListener('mouseover', function(e) {
+//   console.log('hover');
+//   orderNow.classList.add('translate-y-[-100%]');
+// });
+
+
+// card1.addEventListener('mouseleave', function(e) {
+//   orderNow.classList.remove('translate-y-[-100%]');
+// });
+
+
+// card2.addEventListener('mouseover', function(e) {
+//   console.log('hover');
+//   orderNow.classList.add('translate-y-[-100%]');
+// });
+
+
+// card2.addEventListener('mouseleave', function(e) {
+//   orderNow.classList.remove('translate-y-[-100%]');
+// });
+
+
+
+
+
+
+
 
 
 const slider = function () {
@@ -88,3 +123,4 @@ console.log('clicked');
   };
   slider();
   
+
