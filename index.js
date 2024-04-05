@@ -28,6 +28,19 @@
 // });
 
 
+const nav = document.querySelector(".navigation");
+
+window.addEventListener("scroll", function (e) {
+  nav.classList.add('backdrop-blur-sm','bg-black/[.5]', window.scrollY > 0);
+
+  if (!window.scrollY > 0) {
+    nav.classList.remove('bg-black/[.5]','backdrop-blur-sm', window.scrollY < 0);
+  }
+
+
+})
+
+
 
 
 
