@@ -1,14 +1,9 @@
-<html lang="en">
+<html lang="en"  class="!scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rex-kitchen</title>
     <link rel="stylesheet" href="public/style.css">
-
-<!-- fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 
 <!--icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -16,54 +11,62 @@
 </head>
 
 
-<body class="">
+<body >
   
         <!--header-->
-      <div class="  text-center bg-no-repeat bg-cover bg-top h-[55vh] lg:h-[70vh] "  style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./public/img/kitchen-bg.jpg');"> 
+      <div id="home" class="  text-center bg-no-repeat bg-cover bg-top h-[62vh] lg:h-[70vh] "  style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./public/img/kitchen-bg.jpg');"> 
         
         
         <!--navigation-->
-        <nav class="text-white navigation z-10 fixed top-0 flex justify-between  items-center w-[100%] py-5 px-4 lg:px-[4em]">
-            <div class="nav-logo text-2xl lg:text-4xl">
-                <h1><a > <span class="rex  text-red-600 font-[Dancing Script]">Rex </span>kitchen</a>
+        <nav class="text-white navigation z-10 fixed top-0 flex justify-between  items-center w-[100%] py-3 px-4 lg:px-[4em]">
+            <div class="nav-logo 	  ">
+                <h1><a > <span class=" rex  text-red-600 tracking-wide font-bold font-head text-[2.4em] md:text-[2.8em] ">Rex</span><span class="text-[1.65em] font-body md:text-[2em] " >Kitchen</span> </a>
                 </h1>
             </div>
 
-           <div class=" nav-links   opacity-0 z-10 left-[27%] top-[-90%] duration-500 bg-red-600/[.95] absolute min-h-[65vh]  w-[70vw] flex pt-[10em] place-content-center
+           <div class=" nav-links   opacity-0 z-10 left-[27%] top-[-90%] duration-500 bg-red-600/[.95] absolute min-h-[65vh]  w-[70vw] flex pt-[7em] place-content-center
             lg:bg-transparent lg:opacity-100 lg:static lg:pt-0 lg:min-h-fit lg:mx-auto">
 
 
             <ul class="nav-nav text-xl  gap-6 text-center flex flex-col  lg:flex-row  lg:item-center lg:gap-[4vw] ">
                 <li>
-                    <a class="hover:text-red-600" href=""><span>Home</span></a>
+                    <a class="lg:hover:text-red-600" href="#home"><span>Home</span></a>
                 </li>
 
                 <li>
-                    <a class="hover:text-red-600"  href=""><span>About</span></a>
+                  <a class="lg:hover:text-red-600" href="#why"><span>Why Us</span></a>
+              </li>
+
+              <li>
+                <a class="lg:hover:text-red-600" href="#menu"><span>Menu</span></a>
+            </li>
+
+                <li>
+                    <a class="lg:hover:text-red-600"  href="#testimonial"><span>Testimonials</span></a>
                 </li>
                 <li>
-                    <a class="hover:text-red-600"  href=""><span>Contact</span></a>
+                    <a class="lg:hover:text-red-600"  href="#contact"><span>Contact</span></a>
                 </li>
             </ul>                 
            </div>
 
 
      <div class="flex item-center gap-4">
-        <button class="sign-btn text-white border-white border-2 px-4 py-2 rounded-full  hover:bg-red-600">Sign In</button>
+        <button class="sign-btn text-white border-white border-2 px-4 py-2 rounded-full   hover:bg-red-600  md:text-xl">Sign In</button>
 
-            <ion-icon onclick="onToggleMenu(this)"  class="icon text-4xl z-10 pt-1 lg:hidden"  name="menu"></ion-icon>
+            <ion-icon onclick="onToggleMenu(this)"  class="icon text-4xl z-10 pt-1  md:text-5xl lg:hidden"  name="menu"></ion-icon>
         </div>
         </nav>
 <!--navigation-end-->
 
 
 <!--home-hero-->
-          <div class="disc text-center pt-[11em] md:pt-[10em] ">
-        <h2 class="text-red-600 text-2xl md:text-4xl ">Welcome To</h2> <br>
+          <div class="disc text-center absolute inset-0 mt-[40%] md:mt-[20%]  ">
+        <h2 class="text-red-600 font-head font-bold tracking-widest text-[2.3em] -mb-[1em] md:text-[3em] ">Welcome To</h2> <br>
 
-        <h1 class=" tracking-wider text-white text-5xl font-bold -mt-5 pb-5 md:text-6xl" >Rex kitchen</h1>
+        <h1 class=" tracking-wider text-white text-[3.5em] font-bold font-body  pb-2 -mt-[1.2rem] md:-mt-[.9rem] md:text-[4.5em]" >Rex kitchen</h1>
        
-       <button class="Book-btn border-white border-2 px-4 py-3 text-white mt-1 md:px-6 md:py-3 md:text-xl hover:bg-red-600 "> Book A Table</button>
+       <button class="Book-btn border-white border-2 px-4 py-3  hover:bg-red-600 text-white mt-1 md:px-6 md:py-3 md:text-xl "> Book A Table</button>
  
     </div>
 
@@ -75,7 +78,7 @@
       <div class="pb-8 bg-gray-200 text-center rounded-lg
        lg:px-[1em] lg:absolute lg:-mt-[4em] lg:pb-0 lg:pr-5 lg:min-w-fit lg:mx-auto lg:left-[10%] lg:right-[10%]
           lg:flex lg:flex-row lg:overflow-hidden lg:justify-between lg:items-center  ">
-    <div class="reservation text-white font-bold
+    <div class="reservation text-white font-bold font-body
     bg-red-600 py-5  
     text-3xl   lg:h-full lg:py-10 lg:px-[.8em] lg:ml-[-.7em]  "><h1>RESERVATION</h1></div>
     <label class="date py-4 block lg:text-xl ">Date:
@@ -100,13 +103,13 @@
 
       <div class="about text-center text-white  py-[3em] md:py-[7em] bg-[#192024] ">
         <p class="py-2 text-xl block"> The joy of a good chef is not cooking for themselves but cooking for others </p> 
-         <h2 class="text-3xl font-bold">-<span class="about-span  text-red-600  ">Rex</span> kitchen </h2>  
-      </div>
+        <h1><a  > <span class="text-4xl font-bold">-</span> <span class=" rex  text-red-600 tracking-wide font-bold font-head text-[2.4em] ">Rex</span><span class="text-[1.65em] font-body " >Kitchen</span> </a>
+        </div>
 
       <!--whyUs-->
 
-      <div class="why py-8 bg-gray-100 text-center lg:py-[5em] ">
-        <h1 class="text-4xl py-3 block font-bold lg:text-5xl"> <span class="text-red-600"> Why</span> Us</h1>
+      <div id="why" class="why py-8 bg-gray-100 text-center lg:py-[5em] ">
+        <h1 class=" font-body text-4xl py-3 block font-bold lg:text-5xl"> <span class="text-red-600   text-[1.3em] "> Why</span> Us</h1>
 
 
         <div class="reason lg:flex lg:flex-row lg:gap-[4vw] ">
@@ -160,9 +163,9 @@
 
       <!--menu-->
 
-      <section class="menu bg-gray-300 py-5">
+      <section id="menu" class="menu bg-gray-300 py-5">
 
-        <div class="menu-head text-center text-4xl font-bold text-red-600  ">Menu</div>
+        <div class="menu-head text-center text-[3em] font-bold font-body text-red-600   ">Menu</div>
 
           <!--cards-->
 
@@ -262,9 +265,9 @@
 
        <!--testimony-->
 
-       <section class="testimonials py-[2em] px-1  bg-cover  " style="background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./public/img/testimony.jpg');" id="section--3">
+       <section id="testimonial" class="testimonials py-[2em] px-1  bg-cover  " style="background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./public/img/testimony.jpg');" >
 
-        <h1 class="testimonial-title text-center text-4xl font-bold text-red-600 py-5">Testimonials</h1>
+        <h1 class="testimonial-title text-center text-4xl font-bold font-body text-red-600 py-5">Testimonials</h1>
 
       <div class="slider overflow-hidden h-[40vh] my-0 mx-auto relative  ">
         <div class="slide absolute top-0 w-[100%] h-[20rem] flex items-center	justify-center ease-in duration-500">
@@ -317,7 +320,7 @@
 
         <button class="slider-btn btn-left absolute top-[15%] z-10 text-red-600 text-[3em]  cursor-pointer left-0 translate-y-1/2 	 ">&larr;</button>
         <button class="slider-btn btn-right absolute top-[15%] z-10 text-red-600 text-[3em] cursor-pointer right-0  translate-y-1/2 ">&rarr;</button>
-        <div class="dots flex absolute left-[50%] bottom-[10%] translate-y-1/2 bg-red-600 h-[1rem] w-[1rem]  rounded-full cursor-pointer	  "></div>
+        <div class="dots flex absolute left-[50%] bottom-[10%] translate-y-1/2 bg-red-600 h-[1rem] w-[1rem]  rounded-full 	hidden  "></div>
 
       </div>
     </section>
@@ -326,13 +329,13 @@
 
     <!--footer-->
 
-    <section class="footer text-white bg-[#192024] pt-[1em] pb-[3em] ">
+    <section id="contact" class="footer text-white bg-[#192024] pt-[1em] pb-[3em] ">
       <div class="footer-content flex py-[2em] px-[1em] flex-wrap  gap-4 md:flex-row md:justify-between  ">
 
 
           <div class="logo md:basis-1/4 ">    
-        <h2 class=" text-3xl font-bold">-<span class="about-span  text-red-600  ">Rex</span> kitchen </h2>
-        <p class="disc pl-[1em] pt-[.5em]"> anytime, anywhere. enjoy your meal</p> 
+            <h1><a  > <span class="text-4xl font-bold">-</span> <span class=" rex  text-red-600 tracking-wide font-bold font-head text-[2.4em] ">Rex</span><span class="text-[1.65em] font-body " >Kitchen</span> </a>
+              <p class="disc pl-[1em] "> anytime, anywhere. enjoy your meal</p> 
 
 
         <!--socials-->
