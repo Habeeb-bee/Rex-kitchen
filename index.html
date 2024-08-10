@@ -14,7 +14,7 @@
 <body >
   
         <!--header-->
-      <div id="home" class="  text-center bg-no-repeat bg-cover bg-top h-[62vh] lg:h-[70vh] "  style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./public/img/kitchen-bg.jpg');"> 
+      <div id="home" class="  text-center bg-no-repeat bg-cover bg-top h-[55vh] lg:h-[85vh]  "  style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./public/img/kitchen-bg.jpg');"> 
         
         
         <!--navigation-->
@@ -52,7 +52,7 @@
 
 
      <div class="flex item-center gap-4">
-        <button class="sign-btn text-white border-white border-2 px-4 py-2 rounded-full   hover:bg-red-600  md:text-xl">Sign In</button>
+        <button class="sign-btn text-white border-white border-2 px-4 py-2 rounded-full   hover:bg-red-600  md:text-xl md:w-[5em] md:h-[2.5em] ">Sign In</button>
 
             <ion-icon onclick="onToggleMenu(this)"  class="icon text-4xl z-10 pt-1  md:text-5xl lg:hidden"  name="menu"></ion-icon>
         </div>
@@ -61,12 +61,12 @@
 
 
 <!--home-hero-->
-          <div class="disc text-center absolute inset-0 mt-[40%] md:mt-[20%]  ">
-        <h2 class="text-red-600 font-head font-bold tracking-widest text-[2.3em] -mb-[1em] md:text-[3em] ">Welcome To</h2> <br>
+          <div class="disc text-center absolute inset-0 mt-[20vh] lg:mt-[30vh]  ">
+       <h2 class="text-red-600 font-head font-bold tracking-widest text-[2.3em] -mb-[1em] md:text-[3em] lg:text-[4em] ">Welcome To</h2> <br>
 
-        <h1 class=" tracking-wider text-white text-[3.5em] font-bold font-body  pb-2 -mt-[1.2rem] md:-mt-[.9rem] md:text-[4.5em]" >Rex kitchen</h1>
+        <h1 class=" tracking-wider text-white text-[3.5em] font-bold font-body    pb-2 -mt-[1.2rem] md:-mt-[.9rem] md:text-[4.5em] lg:text-[6em]" >Rex kitchen</h1>
        
-       <button class="Book-btn border-white border-2 px-4 py-3  hover:bg-red-600 text-white mt-1 md:px-6 md:py-3 md:text-xl "> Book A Table</button>
+       <button class="Book-btn border-white border-2 px-4 py-3  hover:bg-red-600 text-white cursor-pointer mt-1 md:px-6 md:py-3 md:text-xl "> Book A Table</button>
  
     </div>
 
@@ -80,15 +80,15 @@
           lg:flex lg:flex-row lg:overflow-hidden lg:justify-between lg:items-center  ">
     <div class="reservation text-white font-bold font-body
     bg-red-600 py-5  
-    text-3xl   lg:h-full lg:py-10 lg:px-[.8em] lg:ml-[-.7em]  "><h1>RESERVATION</h1></div>
-    <label class="date py-4 block lg:text-xl ">Date:
-        <input class=" px-[1em] lg:py-[.35em]" type="date" name="" id="">
+    text-3xl   lg:h-full lg:py-10 lg:px-[.8em] lg:ml-[-.7em]"><h1>RESERVATION</h1></div>
+    <label class="date py-4 block lg:text-xl   cursor-pointer ">Date:
+        <input class=" px-[1em] lg:py-[.35em] " type="date" name="" id="">
     </label>
     <label class="time py-4 lg:text-xl ">Time:
         <input class="px-8 lg:py-[.35em]"  type="time" name="" id="">
     </label>
     <div class="table-for py-4 lg:text-xl  ">Table For:
-        <select class="select lg:py-[.35em] px-[2.4em]" >   name="fligths" id="">
+        <select class="select lg:py-[.35em] px-[2.4em]" >  
             <option  class="option "  value="2">2</option>
             <option  class="option"   value="4">4</option>
            </select>
@@ -102,8 +102,8 @@
 <!--qoute-->
 
       <div class="about text-center text-white  py-[3em] md:py-[7em] bg-[#192024] ">
-        <p class="py-2 text-xl block"> The joy of a good chef is not cooking for themselves but cooking for others </p> 
-        <h1><a  > <span class="text-4xl font-bold">-</span> <span class=" rex  text-red-600 tracking-wide font-bold font-head text-[2.4em] ">Rex</span><span class="text-[1.65em] font-body " >Kitchen</span> </a>
+        <p class="py-2 text-[1.4em] block lg:text-[2em]"> The joy of a good chef is not cooking for themselves but cooking for others </p> 
+        <h1><a  > <span class="text-4xl font-bold">-</span> <span class=" rex  text-red-600 tracking-wide font-bold font-head text-[2.4em] md:text-[2.8em] ">Rex</span><span class="text-[1.65em]  font-body md:text-[2em] " >Kitchen</span> </a>
         </div>
 
       <!--whyUs-->
@@ -142,18 +142,27 @@
      
       
        <!--sponsors-->
-       <div class="flex bg-[#192024]  overflow-hidden space-x-16 group ">
-       <div class="slider flex justify-between  animate-loop-scroll space-x-16 group-hover:paused px-[4em]">
-          <img class="  aspect-[1.11] object-contain object-center  overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full   " src="./public/img/diamond.png" alt="">
-          <img class=" aspect-[1.11] object-contain object-center  overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/spice.png" alt="">
-          <img  class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/logo.png" alt="">
-          <img class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/mean.jpg" alt="">
+       <div class="flex bg-[#192024]  overflow-hidden space-x-16  group ">
+       <div class="slider flex justify-between  animate-loop-scroll space-x-10 group-hover:paused px-[4em] lg:px-[6em] ">
+          <img class="  aspect-[1.11] object-contain object-center  overflow-hidden w-[10em] lg:w-[15em] lg:px-[4em]  self-center px-[2em] shrink-0 max-w-full   " src="./public/img/diamond.png" alt="">
+          <img class=" aspect-[1.11] object-contain object-center  overflow-hidden w-[10em] lg:w-[15em] lg:px-[4em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/spice.png" alt="">
+          <img  class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] lg:w-[15em] lg:px-[4em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/logo.png" alt="">
+          <img class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] lg:w-[15em] lg:px-[4em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/mean.jpg" alt="">
+          <img class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] lg:w-[15em] lg:px-[4em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/mashable.png" alt="">
+          <img  class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] lg:w-[15em] lg:px-[4em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/bizinsider.png" alt="">
+          <img  class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] lg:w-[15em] lg:px-[4em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/client-5.png" alt="">
 
-          <img class="  aspect-[1.11] object-contain object-center  overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full   " src="./public/img/diamond.png" alt="">
-          <img class=" aspect-[1.11] object-contain object-center  overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/spice.png" alt="">
-          <img  class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/logo.png" alt="">
-          <img class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/mean.jpg" alt="">
-    
+          
+
+          <img class="  aspect-[1.11] object-contain object-center  overflow-hidden w-[10em] lg:w-[15em] lg:px-[4em] self-center px-[2em] shrink-0 max-w-full   " src="./public/img/diamond.png" alt="">
+          <img class=" aspect-[1.11] object-contain object-center  overflow-hidden w-[10em] lg:w-[15em] lg:px-[4em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/spice.png" alt="">
+          <img  class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] lg:w-[15em] lg:px-[4em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/logo.png" alt="">
+          <img class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] lg:w-[15em] lg:px-[4em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/mean.jpg" alt="">
+          <img class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] lg:w-[15em] lg:px-[4em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/mashable.png" alt="">
+          <img  class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] lg:w-[15em] lg:px-[4em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/bizinsider.png" alt="">
+          <img  class=" aspect-[1.11] object-contain object-center overflow-hidden w-[10em] lg:w-[15em] lg:px-[4em] self-center px-[2em] shrink-0 max-w-full  " src="./public/img/client-5.png" alt="">
+
+
        </div>
    
     </div>
@@ -163,9 +172,10 @@
 
       <!--menu-->
 
-      <section id="menu" class="menu bg-gray-300 py-5">
+      <section id="menu" class="menu bg-gray-300 py-5 lg:py-[5em]">
 
-        <div class="menu-head text-center text-[3em] font-bold font-body text-red-600   ">Menu</div>
+        <div class="menu-head text-center text-[3em] font-bold font-body text-red-600 
+        lg:text-5xl">Menu</div>
 
           <!--cards-->
 
@@ -272,7 +282,7 @@
       <div class="slider overflow-hidden h-[40vh] my-0 mx-auto relative  ">
         <div class="slide absolute top-0 w-[100%] h-[20rem] flex items-center	justify-center ease-in duration-500">
           <div class="testimonial-slider">
-            <h2 class="testimonial-disc  text-2xl font-bold text-white p-[.8em]">Best dishes on the planet</h2>
+            <h2 class="testimonial-disc text-[1.6em] font-bold text-white p-[.8em]">"Best dishes on the planet</h2>
             <blockquote class="testimonial__text text-white text-lg px-[3em]">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Accusantium quas quisquam non? Quas voluptate nulla minima
@@ -281,14 +291,14 @@
 
             <address class="testimonial-author px-[1em] pt-[1em] pb-[4em]">
               <h6 class="testimonial-name  text-red-600 text-xl font-bold">Ameen</h6>
-              <p class="testimonial-location text-white ">San Francisco, USA</p>
+              <p class="testimonial-location text-white ">Damico, 9ja</p>
             </address>
           </div>
         </div>
 
         <div class="slide absolute top-0 w-[100%] h-[20rem] flex items-center	justify-center ease-in duration-500">
           <div class="testimonial-slider">
-            <h2 class="testimonial-disc text-2xl font-bold text-white  py-4">Good customer relation</h2>
+            <h2 class="testimonial-disc text-[1.6em] font-bold text-white p-[.8em]">"Good customer relation</h2>
             <blockquote class="testimonial__text text-white text-lg px-[3em]">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Accusantium quas quisquam non? Quas voluptate nulla minima
@@ -297,14 +307,14 @@
 
             <address class="testimonial-author px-[1em] pt-[1em] pb-[4em]">
               <h6 class="testimonial-name text-red-600 text-xl font-bold  ">Abu Habeef</h6>
-              <p class="testimonial-location text-white  ">San Francisco, USA</p>
+              <p class="testimonial-location text-white  ">Sokoto, 9ja</p>
             </address>
           </div>
         </div>
 
         <div class="slide absolute top-0 w-[100%] h-[20rem] flex items-center	justify-center ease-in duration-500">
           <div class="testimonial-slider">
-            <h2 class="testimonial-disc text-2xl font-bold text-white py-4">Best dishes on the planet</h2>
+            <h2 class="testimonial-disc text-[1.6em] font-bold text-white p-[.8em]">Best dishes on the planet</h2>
             <blockquote class="testimonial__text text-white text-lg px-[3em]">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Accusantium quas quisquam non? Quas voluptate nulla minima
@@ -313,7 +323,7 @@
 
             <address class="testimonial-author px-[1em] pt-[1em] pb-[4em]">
               <h6 class="testimonial-name text-red-600 text-xl font-bold ">Ibraheem</h6>
-              <p class="testimonial-location text-white  ">San Francisco, USA</p>
+              <p class="testimonial-location text-white  ">Somewhere, Earth</p>
             </address>
           </div>
         </div>
@@ -334,7 +344,7 @@
 
 
           <div class="logo md:basis-1/4 ">    
-            <h1><a  > <span class="text-4xl font-bold">-</span> <span class=" rex  text-red-600 tracking-wide font-bold font-head text-[2.4em] ">Rex</span><span class="text-[1.65em] font-body " >Kitchen</span> </a>
+            <h1><a  > <span class="text-4xl font-bold">-</span> <span class=" rex  text-red-600 tracking-wide font-bold font-head text-[2.4em] md:text-[2.8em] ">Rex</span><span class="text-[1.65em] font-body text-[2em] " >Kitchen</span> </a>
               <p class="disc pl-[1em] "> anytime, anywhere. enjoy your meal</p> 
 
 
@@ -385,7 +395,9 @@
 
     </div>
 </div>
-    <div class="copyrigth text-xl text-center ">@Habeebee</div>
+    <div class="copyrigth text-xl text-center ">@Habeebee 
+      
+    </div>
 
     </section>
 
