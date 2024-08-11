@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'dancing';
+    src: url('./fonts/Angel Dancing.ttf');
+  }
+
+  @font-face {
+    font-family: 'josefinsans';
+    src: url('./fonts/JosefinSans-SemiBoldItalic.ttf');
+  }
+
+  
+
+@layer utilities {
+    .paused {
+        animation-play-state: paused;
+    }
+}
+
